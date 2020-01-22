@@ -327,7 +327,7 @@ can't handle blank lines in equations --- don't put blank lines in your
 mathematics.}
 \end{itemize}
 
-(Ended at this slide on the first day of class)
+(Ended here on the first day of class)
 
 \end{frame}
 
@@ -401,7 +401,7 @@ are thousands of freely available packages.
 
 \item Example: \bftt{amsmath} from the American Mathematical Society.
 \begin{minted}[fontsize=\small,frame=single]{latex}
-\documentclass{article}
+\documentclass{article} % top of the file
 \usepackage{amsmath} % preamble
 \begin{document}
 % now we can use commands from amsmath here...
@@ -413,15 +413,16 @@ are thousands of freely available packages.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{\insertsubsection{}: Examples requiring the package \bftt{amsmath}}
+\begin{frame}[fragile]{\insertsubsection{}: Examples requiring \bftt{amsmath}}
 \begin{itemize}
 \item Use \bftt{equation*} (``equation-star'') for unnumbered equations.
 \begin{exampletwouptiny}
-\begin{equation*}
+% will only work with the amsmath package
+\begin{equation*} 
   \Omega = \sum_{k=1}^{n} \omega_k
 \end{equation*}
 \end{exampletwouptiny}
-\item \LaTeX{} treats adjacent letters as variables multiplied together, which
+\item (Optional) \LaTeX{} treats adjacent letters as variables multiplied together, which
 is not always what you want. \bftt{amsmath} defines commands for many common
 mathematical operators.
 \begin{exampletwouptiny}
@@ -432,7 +433,7 @@ mathematical operators.
 \min_{x,y}{(1-x)^2 + 100(y-x^2)^2}
 \end{equation*}
 \end{exampletwouptiny}
-\item You can use \cmdbs{operatorname} for others.
+\item (Optional) You can use \cmdbs{operatorname} for others.
 \begin{exampletwouptiny}
 \begin{equation*}
 \beta_i =
