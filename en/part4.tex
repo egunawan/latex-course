@@ -40,80 +40,11 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{\LaTeX{} Recap}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{\insertsection}
-\begin{itemize}
-\item You write your document in \texttt{plain text} with \cmd{commands} that
-describe its structure and meaning.
-\item The \texttt{latex} program processes your text and commands to produce a
-beautifully formatted document.
-\end{itemize}
-\vskip 2ex
-\begin{center}
-\begin{minted}[frame=single]{latex}
-The rain in Spain falls \emph{mainly} on the plain.
-\end{minted}
-\vskip 2ex
-\tikz\node[single arrow,fill=gray,font=\ttfamily\bfseries,%
-  rotate=270,xshift=-1em]{latex};
-\vskip 2ex
-\fbox{The rain in Spain falls \emph{mainly} on the plain.}
-\end{center}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{\insertsection: Commands \& Arguments}
-\begin{itemize}
-\item A command starts with a \emph{backslash} \keystrokebftt{\bs}.
-\item Some commands take an \emph{argument} in curly braces \keystrokebftt{\{}
-\keystrokebftt{\}}.
-\item Some commands also take \emph{optional arguments} in square brackets \keystrokebftt{[} \keystrokebftt{]}.
-\vskip 2ex
-\begin{exampletwouptiny}
-\includegraphics[
-  width=0.5\textwidth]{gerbil}
-
-\includegraphics[
-  width=0.3\textwidth,
-  angle=270]{gerbil}
-\end{exampletwouptiny}
-\end{itemize}
-
-\tiny{Image license: \href{https://pixabay.com/en/animal-apple-attractive-beautiful-1239390/}{CC0}}
-\end{frame}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{frame}[fragile]{\insertsection: Environments}
-\begin{itemize}
-\item The \cmdbs{begin} and \cmdbs{end} commands are used to create many
-different environments --- contexts.
-
-\item The \bftt{itemize} and \bftt{enumerate} environments make lists.
-\vskip 2ex
-\begin{exampletwouptiny}
-\begin{itemize} % for bullet points
-\item Biscuits
-\item Tea
-\end{itemize}
-
-\begin{enumerate} % for numbers
-\item Biscuits
-\item Tea
-\end{enumerate}
-\end{exampletwouptiny}
-
-\end{itemize}
-\end{frame}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
